@@ -1,0 +1,210 @@
+@import 'partials/_fonts';
+@import 'partials/_wp-style-guide';
+@import 'partials/_icons';
+@import 'partials/_base';
+@import 'partials/_mixins';
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+#header {
+	width: 100%;
+	height: auto;
+	padding: 10px 0;
+		.logo-left {
+			text-align: center;
+			padding-bottom: 10px;
+		}
+
+		.logo-right {
+			text-align: center;
+			padding-bottom: 10px ;
+		}
+}
+
+#hero-head { 
+	background-image: url('../images/hero.jpg');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	height:275px;
+
+
+		#hero-ribbon { 
+			padding: 15px 0;
+			background: #a50203;
+			opacity: 0.6;
+			width:100%;
+			position:relative;
+			top:135px;
+			text-align:center;
+
+			h1 {
+				font-size: $h2;
+				margin: 0;
+				color:$white;
+				font-weight: 400;
+				padding: 7px 0;
+			}
+
+			h3 {
+				font-size:$h3;
+				margin:0;
+				color:$white;
+				font-weight: $weight-font2;
+			}
+		} 
+
+}
+
+section {
+	padding: 55px 0;
+}
+	
+	#sec-one {
+		padding: 10px;
+		color: #323232;
+		line-height: $line-height-main-text;
+		width:100%;
+
+		h2 { color: $color-1;
+			font-size: 20px;
+			font-weight: $weight-font3;
+		}
+	}
+
+	#sec-two {
+		background: #f2f2f2;
+		img {
+			display: block;
+			margin: auto;
+		}
+		h3 {
+			color: $color-1;
+			font-size: 18px;
+			text-align:center;
+		}
+
+		a {
+			color: $color-1;
+			cursor: pointer;
+			text-decoration: none;
+		}
+		a:hover {
+			color: #666;
+		}
+		.row {
+			div {
+				
+			}
+		}
+	}
+
+	#sec-three {
+		color: $color-1;
+		font-size: 16px;
+		p {
+			padding:0 10px;
+		}
+	}
+
+	#footer {
+		background: #f2f2f2;
+		padding: 12px 0;
+		font-size: 12px;
+		text-align: justify;
+
+		
+	}
+
+	.btn-hero {
+			position:relative;
+			top:142px;
+			text-align:center;
+			margin:0 auto;
+			background:$button-color;
+			opacity: 0.9;
+			color: $white;
+			border:transparent;
+			border-radius: 10px;
+			width:135px;
+			font-size: 15px;
+			padding: 7px 15px;
+			text-decoration: none;
+			text-transform: uppercase;
+
+		}
+
+	.btn-large {
+			position:relative;
+			text-align:center;
+			margin:10px auto;
+			background:$button-color;
+			color: $white;
+			border:transparent;
+			border-radius: 7px;
+			font-size: 15px;
+			padding: 12px 15px;
+			text-decoration: none;
+
+		}
+
+
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:768px) { 
+
+	#header {
+		.logo-left {
+			text-align: left;
+		}
+
+		.logo-right {
+			text-align: right;
+		}
+	}
+
+	#hero-head { 
+		#hero-ribbon {
+
+		}
+	}
+
+
+	.btn-hero { 
+		top: 210px;
+		width: 180px;
+	}
+
+	.btn-large {
+		width: 210px;
+	}
+
+
+
+
+}
+
+
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+	#hero-head {
+		height: 375px;
+		#hero-ribbon {
+			top: 185px;
+		}
+	}
+
+
+
+
+
+}
+
+
+
